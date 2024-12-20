@@ -2,7 +2,7 @@ import connection as c
 import pandas as pd
 import streamlit as st
 
-def compare_gdp():
+def compare_gpd():
     
     country = st.text_input("Enter a country").capitalize()
     
