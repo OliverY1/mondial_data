@@ -2,10 +2,9 @@ import streamlit as st
 
 st.set_page_config(page_title="lab4", page_icon="💡", initial_sidebar_state="auto")
 
-#import connection as c
-import country_gpd
+import countrygpd
 import airport
-import search_language
+import searchlanguage
 from streamlit_option_menu import option_menu as op
 
 
@@ -28,10 +27,10 @@ if __name__ == "__main__":
     
     if selected == "Countries":
         st.subheader("Search for countries by language")
-        search_language.countries_and_languages()
+        searchlanguage.countries_and_languages()
     
     if selected == "Compare GDP":
         st.subheader("Compare gdp to neighbouring countries")
-        country_gpd.compare_gdp()
+        countrygpd.compare_gdp()
     
 
